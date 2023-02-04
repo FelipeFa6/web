@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title> Welcome!!! </title>
+
+		<style>
+		p {
+		max-width: 400px;
+		}
+		</style>
+		
+	</head>
+	
+	<body>
+		<a href="selector.html"> &lt- go back... </a>
+		<h1>OpenBaSeD</h1>
+		<h3>MariaDB</h4>
+
+		<p>
+		Install the mariadb-server package
+		in your system
+		</p>
+
+		<pre>
+		$ pkg_add mariadb-server
+		</pre>
+
+		<p>
+		Start/Enable service
+		</p>
+		
+		<pre>
+		$ rcctl enable mysqld
+		$ rcctl start mysqld
+		</pre>
+		
+		<p>
+		Initial Setup MariaDB
+		</p>
+		
+		<p>
+		Initializes the MariaDB data
+		directory and creates the system
+		tables:
+		</p>
+		
+		<pre>
+		$ mysql_install_db
+		</pre>
+		
+		<p>
+		Verify that service running and port is open
+		</p>
+		
+		<pre>
+		$ pgrep mysqld
+		</pre>
+		
+		<p>
+		Or you can also try the following:
+		</p>
+		
+		<pre>
+		$ ps aux | grep mysqld
+		
+		#Verify that TCP port 3306 is open using netstat command:
+		# $ netstat -f inet -na
+		# $ netstat -f inet -na | grep 3306
+		</pre>
+		
+		<p>
+		Secure MariaDB
+		</p>
+		
+		<pre>
+		$ mysql_secure_installation
+		</pre>
+		
+		<p>
+		Start using MariaDB
+		</p>
+		
+		<pre>
+		$ mysql -u root -p
+		</pre>
+		
+		
+		<p>
+		Create a user with SQL syntax
+		inside mariadb
+		</p>
+		
+		<pre>
+		CREATE USER 'username'@'localhost' IDENTIFIED BY 'some_pass';
+		GRANT ALL PRIVILEGES ON dbName.* TO 'username'@'localhost';
+		FLUSH PRIVILEGES;
+		
+		quit
+		</pre>
+		
+		
+		<h4>Other Stuff</h4>
+
+		<p>
+		The configuration file of MariaDB
+		is located under /etc/my.cnf
+		</p>
+		
+		<p>
+		After any change the daemon should
+		be restarted
+		</p>
+
+		<pre>
+		$ rcctl restart mysqld
+		</pre>
+
+	</body>
+</html>
