@@ -3,13 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title> Welcome!!! </title>
-
-		<style>
-		p {
-		max-width: 400px;
-		}
-		</style>
-
+		<link rel="stylesheet" href="/style.css">
 	</head>
 	
 	<body>
@@ -21,6 +15,10 @@
 		display something like the
 		following.
 		</p>
+
+		<pre>
+		$ ip a
+		</pre>
 
 		<pre>
 		lo0: flags=8049<UP,LOOPBACK,RUNNING,MULTICAST> mtu 32768
@@ -41,10 +39,6 @@
 		</pre>
 
 		<p>
-		
-		</p>
-
-		<p>
 		In my case the WiFi adapter/card
 		is the iwx0, read
 		<a href='https://www.openbsdhandbook.com/networking/wireless/'>this article</a> 
@@ -52,12 +46,41 @@
 		chipsets available
 		</p>
 
+		<p>
+		Turn on your chipset
+		</p>
+
 		<pre>
 		ifconfig iwx0 up
-		echo 'join "a" wpakey "B642e9fcfac93f219d07bb6d530eb1de9efeB511"' >> /etc/hostname.$interface
-		echo 'join "b" wpakey "holademar"' >> /etc/hostname.$interface
-		
-		doas sh /etc/netstart $interface
+		</pre>
+
+		<p>
+		Using your favourite text editor,
+		edit the file '/etc/hostname.iwx0'
+		(in your case replace the iwx0
+		with the chipset you previously
+		powered on) and paste the
+		following:
+		</p>
+
+		<pre>
+		join "networkID1" wpakey "networkPassword1"'
+		join "networkID2" wpakey "networkPassword2"'
+		dhcp
+		<pre>
+
+		<p>
+		Note: you can put as many networks
+		using 'join'.
+		</p>
+
+		<p>
+		Now restart your configurations
+		with:
+		</p>
+
+		<pre>
+		$ doas sh /etc/netstart iwx0
 		</pre>
 	</body>
 </html>
