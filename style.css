@@ -1,7 +1,16 @@
 body {
-	background-color: #282828;
-	color: #fff
+	background-color: black;
+	color: white;
 }
+
+a {
+	color: #6782ae;
+}
+
+a:visited {
+	color: #7f788e;
+}
+
 
 p {
 	max-width: 400px;
