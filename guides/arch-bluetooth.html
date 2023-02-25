@@ -1,113 +1,113 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title> Welcome!!! </title>
-		<link rel="stylesheet" href="/style.css">
-	</head>
-	
-	<body>
-		<a href="selector.html"> &lt- go back... </a>
+    <head>
+        <meta charset="utf-8">
+        <title> Welcome!!! </title>
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    
+    <body>
+        <a href="selector.html"> &lt- go back... </a>
 
-		<h1>Arch Linux</h1>
-		<h3>Bluetooth</h4>
+        <h1>Arch Linux</h1>
+        <h3>Bluetooth</h4>
 
-		<p>
-		Install the required packages to
-		start using your bluetooth device.
-		</p>
+        <p>
+        Install the required packages to
+        start using your bluetooth device.
+        </p>
 
-		<p>
-		I mainly use bluetooth for audio
-		purposes so I also install the
-		pulseaudio bluetooth drivers.
-		</p>
-		
+        <p>
+        I mainly use bluetooth for audio
+        purposes so I also install the
+        pulseaudio bluetooth drivers.
+        </p>
+        
 
-		<pre>
-		$ pacman -S bluez bluez-utils pulseaudio-bluetooth
-		</pre>
+        <pre>
+        $ pacman -S bluez bluez-utils pulseaudio-bluetooth
+        </pre>
 
-		<p>
-		Start/Enable Bluetooth Services:
-		</p>
+        <p>
+        Start/Enable Bluetooth Services:
+        </p>
 
-		<pre>
-		$ doas systemctl start bluetooth
-		$ doas systemctl enable bluetooth
-		</pre>
+        <pre>
+        $ doas systemctl start bluetooth
+        $ doas systemctl enable bluetooth
+        </pre>
 
-		<p>
-		Start the bluetooth controller
-		with:
-		</p>
+        <p>
+        Start the bluetooth controller
+        with:
+        </p>
 
-		<pre>
-		$ bluetoothctl
-		</pre>
-
-
-
-		<p>
-		Now run the following to setup bluetooth.
-		</p>
-
-		<pre>
-		[bluetooth]# power on
-		[bluetooth]# agent on
-		[bluetooth]# default-agent
-		</pre>
-
-		<p>
-		The next step is scanning near
-		devices and pairing to them using
-		the MAC address.
-		</p>
-
-		<pre>
-		[bluetooth]# scan on
-		[NEW] Device 2C:C5:46:5F:B8:29 HUAWEI FreeBuds Pro
-		[bluetooth]# pair 2C:C5:46:5F:B8:29
-		[bluetooth]# connect 2C:C5:46:5F:B8:29
-		</pre>
-
-		<p>
-		Finally, if you want to automatically connect to
-		this device in the future:
-		</p>
-
-		<pre>
-		[bluetooth]# trust 2C:C5:46:5F:B8:29
-		</pre>
-
-		<h4> Enable at boot</h4>
-		<p>
-		By default the bluetooth daemon is
-		running but not powered on, this
-		means that your device won't be
-		able to connect inmediatly after
-		startup.
-		</p>
-
-		<p>
-		To enable this feature go to
-		/etc/bluetooth/main.conf,
-		uncomment and set to true the
-		following:
-		</p>
-
-		<pre>
-		[Policy]
-		AutoEnable=true
-		</pre>
-
-		<h4> Troubleshooting</h4>
-		<p>
-		Please:
-		<a
-		href='https://wiki.archlinux.org/title/bluetooth_headset#Troubleshooting'>RTFM</a>
-		</p>
+        <pre>
+        $ bluetoothctl
+        </pre>
 
 
-	</body>
+
+        <p>
+        Now run the following to setup bluetooth.
+        </p>
+
+        <pre>
+        [bluetooth]# power on
+        [bluetooth]# agent on
+        [bluetooth]# default-agent
+        </pre>
+
+        <p>
+        The next step is scanning near
+        devices and pairing to them using
+        the MAC address.
+        </p>
+
+        <pre>
+        [bluetooth]# scan on
+        [NEW] Device 2C:C5:46:5F:B8:29 HUAWEI FreeBuds Pro
+        [bluetooth]# pair 2C:C5:46:5F:B8:29
+        [bluetooth]# connect 2C:C5:46:5F:B8:29
+        </pre>
+
+        <p>
+        Finally, if you want to automatically connect to
+        this device in the future:
+        </p>
+
+        <pre>
+        [bluetooth]# trust 2C:C5:46:5F:B8:29
+        </pre>
+
+        <h4> Enable at boot</h4>
+        <p>
+        By default the bluetooth daemon is
+        running but not powered on, this
+        means that your device won't be
+        able to connect inmediatly after
+        startup.
+        </p>
+
+        <p>
+        To enable this feature go to
+        /etc/bluetooth/main.conf,
+        uncomment and set to true the
+        following:
+        </p>
+
+        <pre>
+        [Policy]
+        AutoEnable=true
+        </pre>
+
+        <h4> Troubleshooting</h4>
+        <p>
+        Please:
+        <a
+        href='https://wiki.archlinux.org/title/bluetooth_headset#Troubleshooting'>RTFM</a>
+        </p>
+
+
+    </body>
 </html>
