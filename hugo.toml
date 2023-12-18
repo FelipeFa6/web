@@ -1,0 +1,6 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'FelipeFarias Blog'
+
+[params]
+author = 'Felipe Farias'

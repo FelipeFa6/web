@@ -1,0 +1,48 @@
+body{
+    margin:50px auto;
+    max-width:700px;
+    line-height:1.6;
+    font-size:18px;
+    padding:0 30px;
+
+    color:#464446;
+    background-color: #DBD3BC;
+    text-align: justify;
+}
+
+p {
+    text-align: justify;
+}
+
+h1,
+h2,
+h3 {
+    line-height:1.2
+}
+
+
+
+/* static/css/styles.css */
+nav {
+    margin-top: 10px;
+    padding: x 0 0 0;
+}
+
+nav h2 {
+    color: #aaa;
+    display: inline;
+}
+
+nav a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a,
+nav a:visited {
+    color: #AAA;
+}
+nav h2 a,
+nav h2 a:visited {
+    color: #83988E;
+}

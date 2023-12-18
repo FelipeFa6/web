@@ -1,0 +1,14 @@
+<nav>
+    <h2>
+        <a rel="author" href="/">{{ .Site.Params.author }}</a>
+    </h2>
+    <br>
+    {{ $rootPages := where .Site.RegularPages "Section" "" }}
+    {{ range $index, $page := $rootPages }}
+        <a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a>
+        {{ if ne (add $index 1) (len $rootPages) }}
+            <span class="bar">|</span>
+        {{ end }}
+    {{ end }}
+</nav>
+
