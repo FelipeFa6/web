@@ -18,7 +18,6 @@ draft = false
 
 - [Coolebra](https://coolebra.com/) (2022 - 2023) (Next.JS)
     - Coolebra was my first full-time job as a
-      fullstack developer where I worked with a
-      team of 3 more developers.
+      fullstack developer.
 
 - [cdwn](https://github.com/FelipeFa6/cdwn) (2023) (C)
