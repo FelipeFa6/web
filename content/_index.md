@@ -13,8 +13,3 @@ hours as a software developer and a FOSS
 enthusiast. Here, I am able to share my setup,
 likings, and rants.
 
-Please take a seat and navigate freely through the
-contents of this site.
-
-
-

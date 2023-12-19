@@ -1,56 +1,46 @@
-body{
-    margin:50px auto;
-    max-width:700px;
-    line-height:1.6;
-    font-size:18px;
-    padding:0 30px;
+html, body, h1, h2, h3, h4, h5, input, textarea, header select {
+	font-family: sans-serif;
+	font-size: 10.5pt;
+}
+pre, code, blockquote.code {
+	font-family: monospace;
+	line-height: 1.3em;
+}
 
-    color:#464446;
-    background-color: #DBD3BC;
-    text-align: justify;
+body{
+	margin:auto;
+	max-width:800px;
+	line-height:1.6;
+	padding: 0px 30px;
+
+	color:#464446;
+	background-color: #DBD3BC;
 }
 
 p {
-    text-align: justify;
+	text-align: justify;
 }
 
-h1,
-h2,
-h3 {
-    line-height:1.2
-}
-
-
-
-/* static/css/styles.css */
 nav {
-    margin-top: 10px;
-    padding: x 0 0 0;
+	margin-top: 10px;
 }
 
 nav h2 {
-    display: inline;
+	display: inline;
+}
+nav h2 a {
+	color: #689d6a;
 }
 
 nav a {
-    font-weight: bold;
-    text-decoration: none;
+	text-decoration: none;
+	color: #7c6f64;
 }
-
-nav a,
-nav a:visited {
-    color: #777;
-}
-nav h2 a,
-nav h2 a:visited {
-    color: #83988E;
-}
-
 
 article header h1 {
-    display: inline;
+	display: inline;
 }
 
 article header .updated {
-    color: #777;
+	color: #928374;
 }
