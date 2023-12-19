@@ -1,46 +1,53 @@
 html, body, h1, h2, h3, h4, h5, input, textarea, header select {
-	font-family: sans-serif;
-	font-size: 10.5pt;
+    font-family: sans-serif;
+    font-size: 10.5pt;
 }
 pre, code, blockquote.code {
-	font-family: monospace;
-	line-height: 1.3em;
+    font-family: monospace;
+    line-height: 1.3em;
 }
 
 body{
-	margin:auto;
-	max-width:800px;
-	line-height:1.6;
-	padding: 0px 30px;
+    margin:auto;
+    max-width:800px;
+    line-height:1.6;
+    padding: 0px 30px;
 
-	color:#464446;
-	background-color: #DBD3BC;
+    color:#464446;
+    background-color: #DBD3BC;
 }
 
 p {
-	text-align: justify;
+    text-align: justify;
 }
 
 nav {
-	margin-top: 10px;
+    margin-top: 10px;
 }
 
 nav h2 {
-	display: inline;
+    display: inline;
 }
 nav h2 a {
-	color: #689d6a;
+    color: #689d6a;
 }
 
 nav a {
-	text-decoration: none;
-	color: #7c6f64;
+    text-decoration: none;
+    color: #7c6f64;
 }
 
 article header h1 {
-	display: inline;
+    display: inline;
 }
 
 article header .updated {
-	color: #928374;
+    color: #928374;
+}
+
+img {
+    max-height: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
