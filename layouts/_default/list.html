@@ -1,6 +1,20 @@
 {{ define "page" }}
 <article class="container">
     {{ .Content }}
+
+
+    {{ range .Sections }}
+    <h2>{{ .Title }}</h2>
+    <ul>
+        {{ range .Pages }}
+        <li>
+            <a href="{{ .RelPermalink }}">{{ or .Title .RelPermalink }}</a>
+        </li>
+        {{ end }}
+    </ul>
+    {{ end }}
+
+
 </article>
 {{ end }}
 

@@ -29,7 +29,6 @@ nav {
 }
 
 nav h2 {
-    color: #aaa;
     display: inline;
 }
 
@@ -40,9 +39,18 @@ nav a {
 
 nav a,
 nav a:visited {
-    color: #AAA;
+    color: #777;
 }
 nav h2 a,
 nav h2 a:visited {
     color: #83988E;
+}
+
+
+article header h1 {
+    display: inline;
+}
+
+article header .updated {
+    color: #777;
 }

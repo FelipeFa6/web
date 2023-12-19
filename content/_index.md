@@ -4,15 +4,17 @@ date = 2023-12-18T18:37:52-03:00
 draft = false
 +++
 
+### 🚀 welcome! 🚀
 
-### 🚀 Welcome! 🚀
+_inspired by [joshua stein's webpage](https://jcs.org/)_
+
+Hey, this website is dedicated to my countless
+hours as a software developer and a FOSS
+enthusiast. Here, I am able to share my setup,
+likings, and rants.
+
+Please take a seat and navigate freely through the
+contents of this site.
 
 
-
-Software developer passionate about efficiency and
-minimalism. Since transitioning to Linux in 2020,
-I've embraced the KISS philosophy, prioritizing
-simplicity and frugality. Proficient in Vim, I'm
-dedicated to crafting streamlined, elegant
-solutions.
 

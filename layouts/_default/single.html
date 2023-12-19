@@ -1,6 +1,13 @@
 {{ define "page" }}
 <article class="container">
-    <h1>{{ .Title }}</h1>
+    <header>
+        <h1>{{ .Title }}</h1>
+        <br>
+        <span class="updated">
+            last updated on {{ .Date.Format "Monday, January 2, 2006" }}
+        </span>
+    </header>
+
     {{ .Content }}
 </article>
 {{ end }}
