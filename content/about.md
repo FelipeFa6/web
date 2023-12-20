@@ -33,7 +33,7 @@ Here are some Spotify playlists that I frequently enjoy:
 ### gym
 
 Currently running a PPL split while in a cut until
-March.
+March, 2024.
 
 Current PRs:
 
