@@ -13,3 +13,6 @@ hours as a software developer and a FOSS
 enthusiast. Here, I am able to share my setup,
 likings, and rants.
 
+You can visit my personal [Git
+server](http://felipe.openbsd.amsterdam/)
+containing most of the _software/configs_ I use.
