@@ -26,9 +26,9 @@ _Techno_, _Classical_, etc
 
 Here are some Spotify playlists that I frequently enjoy:
 
-- [Jazz Hip Hop (chill)](https://open.spotify.com/playlist/1KHla86iONZm5BrJwdKU7H?si=31a50ce826da4f20)
-- [Doom Slayer (gym)](https://open.spotify.com/playlist/3MGduDD33W7eUGYhdi2Llk?si=e7726cc5ad5c43bc)
-- [ZARA (my favorite)](https://open.spotify.com/playlist/40OHRWDv5yVLQXQcfkcJma?si=19fd5bb5ce0e46c4)
+- [Jazz Hip Hop (chill)](https://open.spotify.com/playlist/1KHla86iONZm5BrJwdKU7H)
+- [Too Angry To Die. [ HEAVY ](https://open.spotify.com/playlist/4a4ZRlzCBQ8Upwc7PhOeKI)
+- [ZARA (my favorite)](https://open.spotify.com/playlist/40OHRWDv5yVLQXQcfkcJma)
 
 ### gym
 
