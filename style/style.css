@@ -1,0 +1,28 @@
+* {
+        margin: 0;
+        padding: 0;
+        font-family: serif;
+        color: black;
+}
+
+.header {
+        text-align: center;
+}
+
+.header h1 {
+        font-size: 2em;
+}
+
+
+.content {
+        margin: 30px 50px
+}
+
+#tecnologias-destacadas li {
+        list-style: none;
+}
+
+#experiencia-laboral li,
+#proyectos-personales li {
+        margin-left: 30px;
+}
