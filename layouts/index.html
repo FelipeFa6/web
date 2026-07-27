@@ -1,0 +1,17 @@
+{{ define "main" }}
+<article class="intro">
+	{{ .Content }}
+</article>
+
+<section class="posts">
+	<h2>Blog</h2>
+	<ul>
+		{{ range where .Site.RegularPages "Params.categories" "intersect" (slice "blog") }}
+		<li>
+			<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+			<time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "02-01-2006" }}</time>
+		</li>
+		{{ end }}
+	</ul>
+</section>
+{{ end }}

@@ -1,0 +1,10 @@
+baseURL = '/'
+title = 'Blog de Felipe Farias'
+defaultContentLanguage = 'es'
+
+[languages.es]
+  label = 'Español'
+  locale = 'es_ES'
+
+[permalinks]
+  posts = '/posts/:slug/'
